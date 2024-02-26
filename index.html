@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planning App</title>
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto mt-8">
+        <h1 class="text-3xl font-semibold mb-6">Meal Planning App</h1>
+
+        <!-- Add Meal Form -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Add a New Meal</h2>
+            <form class="bg-white p-6 rounded shadow-md">
+                <div class="mb-4">
+                    <label for="mealName" class="text-sm font-medium text-gray-600">Meal Name:</label>
+                    <input type="text" id="mealName" name="mealName" class="form-input mt-1 p-2 w-full" required>
+                </div>
+                <div class="mb-4">
+                    <label for="ingredients" class="text-sm font-medium text-gray-600">Ingredients:</label>
+                    <textarea id="ingredients" name="ingredients" rows="3" class="form-input mt-1 p-2 w-full" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add Meal</button>
+            </form>
+        </div>
+
+        <!-- Display Meals -->
+        <div>
+            <h2 class="text-xl font-semibold mb-4">Your Planned Meals</h2>
+            <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Example Meal Card -->
+                <li class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Meal Name</h3>
+                        <p class="text-gray-600">Ingredients: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </li>
+
+                <!-- Add more meal cards dynamically here -->
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Tailwind CSS - Optional, for development only -->
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+</body>
+</html>
